@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SKYPROGRAM</title>
-  <link href="static/css/styles.min.css" rel="stylesheet">
+  <link href="/static/css/styles.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -17,8 +17,8 @@
         </svg>
       </a>
       <a href="/bookmarks.html" class="header__bookmark-btn">
-        <img src="static/img/bookmark.png" alt="" class="header__bookmark-icon" width="28">
-        <span class="header__bookmark-counter">3</span>
+        <img src="/static/img/bookmark.png" alt="" class="header__bookmark-icon" width="28">
+        <span class="header__bookmark-counter">{{bookmarks_number}}</span>
       </a>
     </div>
   </header>
@@ -34,7 +34,7 @@
     <section class="items">
       <div class="items__item item">
         <div class="item__top">
-          <a href="/user-feed.html" class="item__head">
+          <a href="/users/{{post.poster_name}}" class="item__head">
                <div class="item__ava-wrap">
                  <img src={{post.poster_avatar}} alt="" class="item__ava" width="47">
                </div>
